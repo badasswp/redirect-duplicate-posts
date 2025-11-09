@@ -15,14 +15,14 @@ This plugin helps redirect users away from duplicate posts and articles to the o
 
 ### Hooks
 
-#### `redirect_duplicate_posts_exclude_url`
+#### `redirect_duplicate_posts_exclude_urls`
 
 This custom hook (filter) provides the ability to exclude a specific URL from redirection:
 
 ```php
-add_filter( 'redirect_duplicate_posts_exclude_url', [ $this, 'filter_exclude_url' ], 10, 1 );
+add_filter( 'redirect_duplicate_posts_exclude_urls', [ $this, 'filter_exclude_urls' ], 10, 1 );
 
-public function filter_exclude_url( $urls ): array {
+public function filter_exclude_urls( $urls ): array {
     $urls[] = 'https://exmaple.com/hello-world-2';
 
     return $urls;
