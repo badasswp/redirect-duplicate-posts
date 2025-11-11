@@ -11,7 +11,7 @@ You can also get the latest version from any of our [release tags](https://githu
 
 ## Why Redirect Duplicate Posts?
 
-Working with translations plugins can be sometimes stressful, especially if your post or article is erroneously translated into multiple copies which you never intended.
+Working with translation plugins can be sometimes stressful, especially if your post or article is erroneously translated into multiple copies which you never intended.
 
 This plugin helps redirect users away from duplicate posts and articles to the original post URL, thereby improving Search Engine Optimization for your WP website.
 
