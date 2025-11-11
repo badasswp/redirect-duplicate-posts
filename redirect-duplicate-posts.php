@@ -77,8 +77,21 @@ function redirect_duplicate_posts(): void {
 
 	// Match, if URL ends with -2 to -9.
 	if ( preg_match( $pattern, $current_url ) ) {
-		// Remove the -2 … -9 suffix.
-		$redirect_url = preg_replace( $pattern, '', $current_url );
+		/**
+		 * Filter the Redirect URL.
+		 * 
+		 * Provide a way for users to able to filter
+		 * the redirect URL. By default, remove the -2 … -9 suffix.
+		 * 
+		 * @since 1.0.0
+		 * 
+		 * @param string $redirect_url Redirect URL.
+		 * @param string $current_url  Current URL.
+		 * @param string $pattern      Regex Pattern.
+		 * 
+		 * @return string
+		 */
+		$redirect_url = apply_filters( 'redirect_duplicate_posts_redirect_url', preg_replace( $pattern, '', $current_url ), $current_url, $pattern );
 
 		wp_safe_redirect( $redirect_url );
 		exit;

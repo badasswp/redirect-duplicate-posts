@@ -32,9 +32,7 @@ jobs:
 
     - name: Clean Up Files
       run: |
-        while IFS= read -r file; do
-          git rm -rf "$file"
-        done < .deployignore
+        git rm -rf .github
         git rm -rf assets
         git rm .deployignore
 

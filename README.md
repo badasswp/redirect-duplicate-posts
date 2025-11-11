@@ -36,6 +36,27 @@ public function filter_exclude_urls( $urls ): array {
 - urls _`{string[]}`_ List of URLs to exclude.
 <br/>
 
+#### `redirect_duplicate_posts_redirect_url`
+
+This custom hook (filter) provides the ability to filter the redirect URL. For e.g you can do:
+
+```php
+add_filter( 'redirect_duplicate_posts_redirect_url', [ $this, 'filter_redirect_url' ], 10, 3 );
+
+public function filter_redirect_url( $redirect_url, $current_url, pattern ): string {
+    if ( 'https://example.com/hello-world-2' === $redirect_url ) {
+        error_log( 'Error: Redirect URL not working as expected' );
+    }
+}
+```
+
+**Parameters**
+
+- redirect_url _`{string}`_ Redirect URL. By default, this would be the Redirect URL.
+- current_url _`{string}`_ Current URL. By default, this would be the Current URL of the duplicate post.
+- pattern _`{string}`_ Regex Pattern. By default, this would be a regex pattern to help with matching duplicate posts.
+<br/>
+
 #### `redirect_duplicate_posts_regex_pattern`
 
 This custom hook (filter) provides the ability to filter the regex pattern. For e.g you can do:
