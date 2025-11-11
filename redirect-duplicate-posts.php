@@ -20,7 +20,7 @@ if ( ! defined( 'WPINC' ) ) {
 	exit;
 }
 
-add_action( 'template_redirect', __NAMESPACE__  . '\redirect_duplicate_posts' )
+add_action( 'template_redirect', __NAMESPACE__  . '\redirect_duplicate_posts' );
 
 /**
  * Redirect Duplicate Posts.
