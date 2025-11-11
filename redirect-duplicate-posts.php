@@ -80,7 +80,7 @@ function redirect_duplicate_posts(): void {
 		// Remove the -2 … -9 suffix.
 		$redirect_url = preg_replace( $pattern, '', $current_url );
 
-		wp_redirect( $redirect_url, 301 );
+		wp_safe_redirect( $redirect_url );
 		exit;
 	}
 }
