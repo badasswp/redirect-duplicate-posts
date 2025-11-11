@@ -41,6 +41,24 @@ function redirect_duplicate_posts() : void {
 	// The permalink for this post/page.
 	$current_url = urldecode( get_permalink() );
 
+	/**
+	 * Filter Excluded URLs.
+	 * 
+	 * Provide a way for users to exclude URLs
+	 * that they want re-directed.
+	 * 
+	 * @since 1.0.0
+	 * 
+	 * @param string[] $urls Excluded URLs.
+	 * @return string[]
+	 */
+	$urls = apply_filters( 'redirect_duplicate_posts_exclude_urls', [] );
+
+	// Bail out, if is excluded URL.
+	if ( in_array( $current_url, $urls, true ) ) {
+		return;
+	}
+
 	// Get Regex.
 	$pattern = '/-(?:[2-9])\/?$/';
 
