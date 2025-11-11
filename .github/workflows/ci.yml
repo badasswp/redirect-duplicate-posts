@@ -20,6 +20,16 @@ jobs:
         exclude-files: '.deployignore'
         exclude-directories: '.github,assets'
 
+    - name: Checkout to Master Built branch
+      if: github.ref == 'refs/heads/master'
+      env:
+        USER_EMAIL: "badasswpdev@gmail.com"
+        USER_NAME: "badasswp"
+      run: |
+        git config user.email "${USER_EMAIL}"
+        git config user.name "${USER_NAME}"
+        git checkout -b master-built
+
     - name: Clean Up Files
       run: |
         while IFS= read -r file; do
