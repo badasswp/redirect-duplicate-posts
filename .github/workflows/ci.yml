@@ -16,6 +16,9 @@ jobs:
 
     - name: Run plugin check
       uses: wordpress/plugin-check-action@v1
+      with:
+        exclude-files: '.deployignore'
+        exclude-directories: '.github,assets'
 
     - name: Clean Up Files
       run: |
