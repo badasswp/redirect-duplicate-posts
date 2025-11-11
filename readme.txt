@@ -51,9 +51,8 @@ Want to add your personal touch? All of our documentation can be found [here](ht
 
 == Screenshots ==
 
-1. Redirect Duplicate Posts icon - Convert your blocks to JSON and vice versa.
-2. Redirect Duplicate Posts options - View, Import Blocks & Export Blocks.
-3. Redirect Duplicate Posts sidebar - See Redirect Duplicate Posts on sidebar.
+1. Duplicated Post link - The duplicated post or article URL.
+2. Original Post link - The user is now redirected to the original post URL.
 
 == Changelog ==
 
