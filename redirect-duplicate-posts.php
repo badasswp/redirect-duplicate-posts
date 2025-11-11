@@ -32,7 +32,7 @@ add_action( 'template_redirect', __NAMESPACE__  . '\redirect_duplicate_posts' )
  *
  * @return void
  */
-function redirect_duplicate_posts() : void {
+function redirect_duplicate_posts(): void {
 	// Bail out, if not post or page.
 	if ( ! is_singular() ) {
 		return;
