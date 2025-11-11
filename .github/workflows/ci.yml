@@ -35,6 +35,7 @@ jobs:
         while IFS= read -r file; do
           git rm -rf "$file"
         done < .deployignore
+        git rm -rf assets
         git rm .deployignore
 
     - name: Push to Master Built
