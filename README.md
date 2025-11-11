@@ -1,6 +1,8 @@
 # redirect-duplicate-posts
 Redirect Duplicate Posts
 
+For e.g. `https://example.com/hello-world-2` -> `https://example.com/hello-world`
+
 ## Download
 
 Download from [WordPress plugin repository](https://wordpress.org/plugins/redirect-duplicate-posts/).
