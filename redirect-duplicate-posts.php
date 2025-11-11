@@ -62,6 +62,19 @@ function redirect_duplicate_posts() : void {
 	// Get Regex.
 	$pattern = '/-(?:[2-9])\/?$/';
 
+	/**
+	 * Filter the Regex Pattern.
+	 * 
+	 * Provide a way for users to able to modify
+	 * the regex applied to URLs.
+	 * 
+	 * @since 1.0.0
+	 * 
+	 * @param string $pattern Regex Pattern.
+	 * @return string
+	 */
+	$pattern = apply_filters( 'redirect_duplicate_posts_regex_pattern', $pattern );
+
 	// Match, if URL ends with -2 to -9.
 	if ( preg_match( $pattern, $current_url ) ) {
 		// Remove the -2 … -9 suffix.
