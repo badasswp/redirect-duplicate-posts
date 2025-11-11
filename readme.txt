@@ -8,7 +8,7 @@ Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin helps redirect users away from duplicate posts and articles to the original post URL, thereby improving Search Engine Optimization for your WP website.
+This plugin helps redirect users away from duplicate posts to the original post URL, thereby improving Search Engine Optimization for your website.
 
 == Installation ==
 
