@@ -45,7 +45,7 @@ function redirect_duplicate_posts(): void {
 	 * Filter Excluded URLs.
 	 * 
 	 * Provide a way for users to exclude URLs
-	 * that they want re-directed.
+	 * that they DON'T want re-directed.
 	 * 
 	 * @since 1.0.0
 	 * 
@@ -65,8 +65,8 @@ function redirect_duplicate_posts(): void {
 	/**
 	 * Filter the Regex Pattern.
 	 * 
-	 * Provide a way for users to able to modify
-	 * the regex applied to URLs.
+	 * Provide a way for users to be able to
+	 * modify the regex applied to URLs.
 	 * 
 	 * @since 1.0.0
 	 * 
