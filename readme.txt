@@ -28,7 +28,7 @@ It's <strong>light-weight</strong>, and <strong>easy</strong> to use!
 ✔️ Provides support for re-directing <strong>multiple posts</strong> easily & quickly.
 ✔️ Has <strong>custom WP filters</strong> built in.
 ✔️ Useful for <strong>WP websites</strong> with tons of duplicated posts.
-✔️ Available in <strong>mutiple langauges</strong> such as Arabic, Chinese, Hebrew, Hindi, Russian, German, Italian, Croatian, Spanish & French languages.
+✔️ Available in <strong>multiple langauges</strong> such as Arabic, Chinese, Hebrew, Hindi, Russian, German, Italian, Croatian, Spanish & French languages.
 ✔️ <strong>Backward compatible</strong>, works with most WP versions.
 
 = ✨ Getting Started =
@@ -45,7 +45,7 @@ You can get a taste of how this works, by using the [demo](https://tastewp.com/c
 
 = 🔌🎨 Plug and Play or Customize =
 
-The <strong>Redirect Duplicate Posts</strong> plugin is built to work right out of the box. Simply install, activate and start using in your Block Editor.
+The <strong>Redirect Duplicate Posts</strong> plugin is built to work right out of the box. Simply install, activate and start using.
 
 Want to add your personal touch? All of our documentation can be found [here](https://github.com/badasswp/redirect-duplicate-posts). You can override the plugin's behaviour with custom logic of your own using [hooks](https://github.com/badasswp/redirect-duplicate-posts?tab=readme-ov-file#hooks).
 
