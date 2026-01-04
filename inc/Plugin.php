@@ -67,12 +67,12 @@ class Plugin {
 
 		/**
 		 * Filter Excluded URLs.
-		 * 
+		 *
 		 * Provide a way for users to exclude URLs
 		 * that they DON'T want re-directed.
-		 * 
+		 *
 		 * @since 1.0.0
-		 * 
+		 *
 		 * @param string[] $urls Excluded URLs.
 		 * @return string[]
 		 */
@@ -88,12 +88,12 @@ class Plugin {
 
 		/**
 		 * Filter the Regex Pattern.
-		 * 
+		 *
 		 * Provide a way for users to be able to
 		 * modify the regex applied to URLs.
-		 * 
+		 *
 		 * @since 1.0.0
-		 * 
+		 *
 		 * @param string $pattern Regex Pattern.
 		 * @return string
 		 */
@@ -103,16 +103,16 @@ class Plugin {
 		if ( preg_match( $pattern, $current_url ) ) {
 			/**
 			 * Filter the Redirect URL.
-			 * 
+			 *
 			 * Provide a way for users to able to filter
 			 * the redirect URL. By default, remove the -2 … -9 suffix.
-			 * 
+			 *
 			 * @since 1.0.0
-			 * 
+			 *
 			 * @param string $redirect_url Redirect URL.
 			 * @param string $current_url  Current URL.
 			 * @param string $pattern      Regex Pattern.
-			 * 
+			 *
 			 * @return string
 			 */
 			$redirect_url = apply_filters( 'redirect_duplicate_posts_redirect_url', preg_replace( $pattern, '', $current_url ), $current_url, $pattern );
