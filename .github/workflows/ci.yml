@@ -14,31 +14,19 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Run plugin check
-      uses: wordpress/plugin-check-action@v1
+    - name: Set up PHP v8.2
+      uses: shivammathur/setup-php@v2
       with:
-        exclude-files: '.deployignore'
-        exclude-directories: '.github,assets'
+        php-version: '8.2'
 
-    - name: Checkout to Master Built branch
-      if: github.ref == 'refs/heads/master'
-      env:
-        USER_EMAIL: "badasswpdev@gmail.com"
-        USER_NAME: "badasswp"
+    - name: Validate Composer
       run: |
-        git config user.email "${USER_EMAIL}"
-        git config user.name "${USER_NAME}"
-        git checkout -b master-built
+        composer validate --strict
 
-    - name: Clean Up Files
+    - name: Install Composer
       run: |
-        git rm -rf .github
-        git rm -rf assets
-        git rm .deployignore
-        git rm .gitignore
+        composer install --prefer-dist --no-progress
 
-    - name: Push to Master Built
+    - name: Check PHP Linting
       run: |
-        git commit -m "push to master-built"
-        git push origin master-built -f
-        rm -rf .git
+        composer run lint
