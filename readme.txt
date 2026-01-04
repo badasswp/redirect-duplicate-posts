@@ -56,6 +56,10 @@ Want to add your personal touch? All of our documentation can be found [here](ht
 
 == Changelog ==
 
+= 1.0.1 =
+* Use Composer setup for plugin.
+* Tested up to WP 6.9.
+
 = 1.0.0 =
 * Redirect duplicate posts to original post.
 * Custom filters `redirect_duplicate_posts_exclude_urls`, `redirect_duplicate_posts_regex_pattern`.
