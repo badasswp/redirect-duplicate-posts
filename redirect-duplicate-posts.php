@@ -3,7 +3,7 @@
  * Plugin Name: Redirect Duplicate Posts
  * Plugin URI:  https://github.com/badasswp/redirect-duplicate-posts
  * Description: Redirect duplicate post URLs to original URL.
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      badasswp
  * Author URI:  https://github.com/badasswp
  * License:     GPL v2 or later
