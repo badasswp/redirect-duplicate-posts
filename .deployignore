@@ -1,7 +1,0 @@
-phpcs.xml
-.github
-assets
-.gitignore
-.editorconfig
-README.md
-CHANGELOG.md
