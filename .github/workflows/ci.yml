@@ -35,6 +35,7 @@ jobs:
         git rm -rf .github
         git rm -rf assets
         git rm .deployignore
+        git rm .gitignore
 
     - name: Push to Master Built
       run: |
