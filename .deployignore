@@ -5,3 +5,5 @@ assets
 .editorconfig
 README.md
 CHANGELOG.md
+package.json
+.wp-env.json
