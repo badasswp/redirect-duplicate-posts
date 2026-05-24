@@ -56,6 +56,10 @@ Want to add your personal touch? All of our documentation can be found [here](ht
 
 == Changelog ==
 
+= 1.1.0 =
+* Chore: Update CI/CD pipeline.
+* Tested up to WP 6.9.
+
 = 1.0.1 =
 * Use Composer setup for plugin.
 * Tested up to WP 6.9.
