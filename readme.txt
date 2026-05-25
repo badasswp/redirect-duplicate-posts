@@ -2,8 +2,8 @@
 Contributors: badasswp
 Tags: redirect, duplicate, post, seo
 Requires at least: 4.0
-Tested up to: 6.9
-Stable tag: 1.0.1
+Tested up to: 7.0
+Stable tag: 1.1.0
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -55,6 +55,10 @@ Want to add your personal touch? All of our documentation can be found [here](ht
 2. Original Post link - The user is now redirected to the original post URL.
 
 == Changelog ==
+
+= 1.1.0 =
+* Chore: Update CI/CD pipeline.
+* Tested up to WP 6.9.
 
 = 1.0.1 =
 * Use Composer setup for plugin.
